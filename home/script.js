@@ -347,15 +347,6 @@ class Slider {
 
 
 // Toggle active link
-const links = document.querySelectorAll('.js-nav a');
-
-links.forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    links.forEach(other => other.classList.remove('is-active'));
-    link.classList.add('is-active');
-  });
-});
 
 // Init classes
 const slider = new Slider();
